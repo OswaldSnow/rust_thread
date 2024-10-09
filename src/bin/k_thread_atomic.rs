@@ -33,6 +33,7 @@ fn main() {
     }
 
     // assert_eq!(N_TIMES * N_THREADS as u64, R.load(Ordering::Relaxed));
+    // Ordering::xxx 设定内存顺序
     println!("R val is {}", R.load(Ordering::SeqCst));
 
     println!("{:?}", Instant::now().sub(s));
