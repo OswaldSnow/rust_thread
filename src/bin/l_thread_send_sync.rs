@@ -19,7 +19,7 @@ fn main() {
     为裸指针实现 Send 和 Sync
      */
 
-    // p 是一个指针 指向内存地址为 8 的地址，这里的 8 并不是一个合法的
+    // p 是一个指针 指向u8类型数据
     let p = 8 as *mut u8;
 
     // 编译错误：the trait `Send` is not implemented for `*mut u8`, which is required by
